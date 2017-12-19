@@ -1,0 +1,21 @@
+html {
+	background-image: url(test1.png);
+}
+
+.box {
+	max-width: 1000px;
+	max-height: 900px;
+	min-height: 500px;
+	margin: auto;
+	background-image: url(test.png);
+}
+
+.secondBox {
+	width: 200px;
+	margin: auto;
+	color: white;
+}
+
+h1{
+	color: white;
+}
