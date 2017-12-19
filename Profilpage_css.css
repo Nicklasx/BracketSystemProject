@@ -1,0 +1,24 @@
+body {
+	background-image: url("background.jpg");
+}
+
+.box {
+	color: white;
+	width: 1000px;
+	height: 750px;
+	border: 2px solid black;
+	margin: auto;
+	background-image: url("Gaming.jpg");
+}
+
+.secondBox {
+	width: 300px;
+	margin: auto;
+	border: 2px solid green;
+
+}
+
+
+h1 {
+	color: white;
+}
