@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-
-	<title>Turnering</title>
-
-</head>
-
-<body>
-
+<?php 
+include "header.php";
+?>
 	<h1>Projekt</h1>
 
 
@@ -19,8 +9,8 @@
     <input type="text" name="username" required>
     <input type="password" name="password" required>
     <input type="submit" value="Login">
+</form>
 
-
-</body>
-
-</html>
+<?php
+include "footer.php";
+?>

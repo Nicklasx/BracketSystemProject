@@ -1,16 +1,5 @@
-<!DOCTYPE html>
 
-<html>
 
-<head>
-
-	<title></title>
-
-</head>
-
-<body>
-
-	</form>
 <h2>Sign in:</h2>
 <form action="register.php" method="POST">
     Username: <br><input type="text" name="username" required> <br>
@@ -23,8 +12,3 @@
     GamerTag: <br><input type="text" name="GamerTag" required> <br>
     <input type="submit" value="Register">
 </form>
-
-
-</body>
-
-</html>
