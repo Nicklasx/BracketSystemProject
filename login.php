@@ -8,7 +8,7 @@ $username = $_POST['username'];
 $password = md5($_POST['password']);
 
 
-$sql = "SELECT * FROM `users` WHERE `username` = '".$username."'";
+$sql = "SELECT * FROM `login` WHERE `Username` = '".$username."'";
 
 $result = $conn->query($sql);
 if($result->num_rows > 0) {
