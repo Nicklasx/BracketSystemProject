@@ -9,9 +9,37 @@
     $name = $_POST['name'];
     $lastname = $_POST['lastname'];
     $gamertag = $_POST['gamertag'];
+    $teamleader = $_POST['teamcaptain'];
 
     if($password != $cpassword) {
         header('Location: signupform.php?error=pw');
     }
+
+    $sql = "SELECT * FROM `login` WHERE `Username` = '".$username."'";
+    $result = $conn->query($sql);
+    if($result->num_rows > 0) {
+        header('Location: signupform.php?error=user');
+    }
+
+    $sql = "SELECT * FROM `login` WHERE `E-mail` = '".$email."'";
+    $result = $conn->query($sql);
+    if($result->num_rows > 0) {
+        header('Location: signupform.php?error=mail');
+    }
+
+    $sql = "SELECT * FROM `login` WHERE `GamerTag` = '".$gamertag."'";
+    $result = $conn->query($sql);
+    if($result->num_rows > 0) {
+        header('Location: signupform.php?error=tag');
+    }
+
+    $sql = "INSERT INTO `login` (`Username`, `Password`, `E-mail`, `Mobil nummer`, `Fornavn`, `Efternavn`, `GamerTag`, `Holdleder`) VALUES ('".$username."','".$password."','".$email."','".$phonenumber."','".$name."','".$lastname."','".$gamertag."','".$teamleader."')";
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    header('Location: index.php');
 
 ?>
