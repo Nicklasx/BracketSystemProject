@@ -4,7 +4,7 @@
 
 <head>
 
-	<link rel="stylesheet" type="text/css" href="Test.css">
+	<link rel="stylesheet" type="text/css" href="Sign up_Testcss.css">
 
 	<title></title>
 
@@ -16,24 +16,26 @@
 
 <div class="box">
 <div class="secondBox">
-	<h2>Sign in:</h2>
+	<h2>Sign up:</h2>
 <form action="register.php" method="POST">
     Username: <br><input type="text" name="username" required> <br><br>
-    Password: <br><input type="password" name="password" required> <br><br>
-    Confirm Password: <br><input type="password" name="password2" required> <br><br>
-    E-mail: <br><input type="text" name="e-mail" required> <br><br>
-    Mobilnummer: <br><input type="text" name="Mobilnummer" required> <br><br>
-    Fornavn: <br><input type="text" name="Fornavn" required> <br><br>
-    Efternavn: <br><input type="text" name="Efternavn" required> <br><br>
-    GamerTag: <br><input type="text" name="GamerTag" required> <br><br>
+    Password: <br><input type="password" name="password" required> <br>
+    Confirm Password: <br><input type="password" name="password2" required> <br>
+    E-mail: <br><input type="text" name="e-mail" required> <br>
+    phone number: <br><input type="text" name="phonenumber" required> <br>
+    name: <br><input type="text" name="name" required> <br>
+    last name: <br><input type="text" name="lastname" required> <br>
+    GamerTag: <br><input type="text" name="gamertag" required> <br>
 
-    <h4>Holdleder?</h4>
-    <select>
-    	<option value=""></option>
-    	<option value="ja">Ja</option>
-    	<option value="nej">Nej</option>
+    <h4>Team Captain?</h4>
+    <select name="teamcaptain">
+        <option value=""></option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
     </select>
     <input type="submit" value="Register">
+    <input type="submit" value="Cancel">
+
 </form>
 </div>
 </div>

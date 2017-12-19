@@ -1,5 +1,5 @@
 html {
-	background-image: url(test1.png);
+	background-image: url(loginTest1png.png);
 }
 
 .box {
@@ -7,7 +7,7 @@ html {
 	max-height: 900px;
 	min-height: 500px;
 	margin: auto;
-	background-image: url(test.png);
+	background-image: url(loginTestpng.png);
 }
 
 .secondBox {
@@ -17,5 +17,9 @@ html {
 }
 
 h1{
+	color: white;
+}
+
+h1 {
 	color: white;
 }
