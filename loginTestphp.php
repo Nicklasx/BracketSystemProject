@@ -12,6 +12,7 @@
     password:<br><input type="password" name="password" required><br><br>
     <input type="submit" value="Login">
     <input type='submit' value='sign up'>
+</form>
     </div>
  	
 </div>
