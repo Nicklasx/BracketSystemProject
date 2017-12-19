@@ -19,10 +19,20 @@ if(isset($_GET['error'])) {
     last name: <br><input type="text" name="lastname" required> <br>
     GamerTag: <br><input type="text" name="gamertag" required> <br>
     <input type="submit" value="Register">
+
+    <h4>Holdleder?</h4>
+    <select>
+    	<option value=""></option>
+    	<option value="ja">Ja</option>
+    	<option value="nej">Nej</option>
+    </select>
+    <input type="submit" value="Register">
 </form>
+
 <form action="index.php" method="POST">
     <input type="submit" value="Cancel">
 </form>
+
 
 <?php
 echo $line;
