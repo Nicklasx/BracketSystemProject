@@ -10,5 +10,12 @@
     Fornavn: <br><input type="text" name="Fornavn" required> <br>
     Efternavn: <br><input type="text" name="Efternavn" required> <br>
     GamerTag: <br><input type="text" name="GamerTag" required> <br>
+
+    <h4>Holdleder?</h4>
+    <select>
+    	<option value=""></option>
+    	<option value="ja">Ja</option>
+    	<option value="nej">Nej</option>
+    </select>
     <input type="submit" value="Register">
 </form>
