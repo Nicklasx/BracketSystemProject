@@ -12,6 +12,9 @@ if (!isset($_SESSION['username'])) {
     $line .= "<input type='password' name='password' required>";
     $line .= "<input type='submit' value='login'>";
     $line .= "</form>";
+    $line .= "<form action='signupform.php' method='POST'>";
+    $line .= "<input type='submit' value='Sign up'>";
+    $line .= "</form>";
 }
 else{
     $line .= "<form action='logout.php' method='POST'>";
