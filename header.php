@@ -17,7 +17,17 @@ include "sqlconn.php";
   <li><a href="#contact">Create Team</a></li>
   <li><a href="#about">My matches</a></li>
   <li><a href="#about">About</a></li>
-  <li><a href="#about">Profile</a></li>
-  <li><a href="#about">Login</a></li>
-  <li><a href="#about">Logout</a></li>
+  <li><a href="Profilpage_php.php">Profile</a></li>
+<form action='login.php' method='POST'>
+<input type='text' name='username' required>
+<input type='password' name='password' required>
+<input type='submit' value='login'>
+</form>
+<form action='signupform.php' method='POST'>
+<input type='submit' value='Sign up'>
+</form>
+<form action='logout.php' method='POST'>
+<input type='submit' value='logout'>
+</form>
+</div></div>
 </ul>
