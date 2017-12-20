@@ -7,7 +7,7 @@ include "header.php";
 <div class="box">
 <div class="secondbox">
 
-	<div><a href="">Couter Strike Globale Offensive 5v5</a></div><br>
+	<div><a href="CS5v5.php">Couter Strike Globale Offensive 5v5</a></div><br>
 	<div><a href="">Couter Strike Globale Offensive 1v1</a></div><br>
 	<div><a href="">Rocket League (PC) 3v3</a></div><br>
 	<div><a href="">Rocket League (PC) 2v2</a></div><br>
