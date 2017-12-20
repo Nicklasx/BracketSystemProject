@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="media/style.css">
 
 <h1>Test</h1>
 
@@ -14,3 +14,6 @@
     Team member id: <br><input type="text" name="id" required> <br>
     Team member id: <br><input type="text" name="id" required> <br>
 </form>
+
+<button type="submit" value="Create">Create</button>
+<button type="submit" value="Cancel">Cancel</button>
