@@ -72,3 +72,13 @@ float: right;
     ul.topnav li {
     	float: none;
     }
+}
+
+.tilmeld {
+	margin: auto;
+	color: white;
+	max-width: 150px;
+	min-width: 100px;
+	background-color: gray;
+	border: 2px solid black;
+}
