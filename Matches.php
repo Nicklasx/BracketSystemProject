@@ -8,7 +8,24 @@ include "header.php";
 <div class="secondbox">
 
 	<div>My Matches</div><br>
-	<div></div><br>
+	
+	<table style="width:100%">
+  <tr>
+    <th>Team</th>
+    <th>VS</th> 
+    <th>Team</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td> 
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td> 
+    <td></td>
+  </tr>
+</table>
 	
 </div>	
 
