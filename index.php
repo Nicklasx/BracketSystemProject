@@ -20,9 +20,12 @@ if (!isset($_SESSION['username'])) {
     $line .= "</div></div>";
 }
 else{
+    $line .= "<div class='box'>";
+    $line .= "<div class='secondBox'>";
     $line .= "<form action='logout.php' method='POST'>";
     $line .= "<input type='submit' value='logout'>";
     $line .= "</form>";
+    $line .= "</div></div>";
 }
 
 ?>

@@ -5,7 +5,7 @@ include "sqlconn.php";
 ?>
 
 <html>
-<link rel="stylesheet" type="text/css" href="loginTestcss.css">
+<link rel="stylesheet" type="text/css" href="media/style.css">
 <head>
 </head>
 
