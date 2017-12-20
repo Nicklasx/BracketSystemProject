@@ -6,7 +6,6 @@ include "header.php";
 
 <div class="box"></div>
 <div class="secondbox"></div>
-<div class="thirdbox"></div>
 
 <?php
 include "footer.php";
