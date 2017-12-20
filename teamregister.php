@@ -20,16 +20,18 @@
 
     $sameusercheck = explode("," , $line);
 
-    for ($i = 0; $i < count($sameusercheck);$i++) {
-
+    
+    for ($i = 1; $i < count($sameusercheck); $i++) {
         $sql = "SELECT * FROM `login` WHERE `ID` = '".$_POST["id".$i]."'";
         $result = $conn->query($sql);
         if($result->num_rows < 1) {
-            header('Location: holdOprettelseTest.php?error=nous');
+            header('Location: holdOprettelseTest.php?error='.$_POST['id'.$i]);
             $error = 1;
         }
+    }
+  
 
-
+    for ($i = 0; $i < count($sameusercheck);$i++) {
         for ($j = 0; $j < count($sameusercheck);$j++) {
             if($j != $i) {
                 if ($sameusercheck[$i] == $sameusercheck[$j]) {
