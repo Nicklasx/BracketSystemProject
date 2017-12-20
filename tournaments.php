@@ -4,7 +4,7 @@ include "header.php";
 
 <h1>Tournaments</h1>
 
-<div class="box"></div>
+<div class="box">
 <div class="secondbox">
 
 	<div><a href="">Couter Strike Globale Offensive 5v5</a></div><br>
