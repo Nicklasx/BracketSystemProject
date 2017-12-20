@@ -2,7 +2,7 @@
 
 <html>
 
-<link rel="stylesheet" type="text/css" href="Profilpage.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <head>
 

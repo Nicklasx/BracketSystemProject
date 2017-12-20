@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="holdOprettelseTest.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <h1>Test</h1>
 
