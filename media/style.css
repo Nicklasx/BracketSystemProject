@@ -90,3 +90,19 @@ float: right;
 	background-color: black; 
 	margin-left: -375px;
 }
+
+.b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8 {
+	color: white;
+	border: 2px solid black;
+	max-width: 300px;
+	min-width: 150px;
+	min-height: 70px;
+}
+
+.b1,.b2,.b3,.b4 {
+	display: block;
+}
+
+.b5,.b6 {
+	
+}
