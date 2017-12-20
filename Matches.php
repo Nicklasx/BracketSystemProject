@@ -11,7 +11,7 @@ include "header.php";
 	<div>My Matches</div><br>
 
 <div class="Test"></div>
-	<table style="border: 2px solid black; width: 300%; background-color: black; margin-left: -375px;">
+	<table>
   <tr>
     <th style="color:white;">Team</th>
     <th style="color:white;">VS</th> 
@@ -30,7 +30,6 @@ include "header.php";
 </table>
 	
 	
-
 </div>
 
 <?php
