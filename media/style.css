@@ -3,9 +3,10 @@ html {
 }
 
 .box {
-	max-width: 1000px;
-	max-height: 900px;
-	min-height: 500px;
+	max-width: 1920px;
+	min-width: 800px;
+	max-height: 1080px;
+	min-height: 800px;
 	margin: auto;
 	background-image: url(loginTestpng.png);
 }
