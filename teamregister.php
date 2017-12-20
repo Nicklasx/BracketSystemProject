@@ -1,4 +1,5 @@
 <?php
+    include "header.php";
     $line = "";
     if(isset($_POST['teamName'])) $teamName = $_POST['teamName'];
     if(isset($_POST['id1'])) $line .= $_POST['id1'];
@@ -11,16 +12,23 @@
     $sql = "SELECT * FROM `hold` WHERE `HoldNavn` = '".$teamName."'";
     $result = $conn->query($sql);
     if($result->num_rows > 0) {
-        header('Location: teamcreate.php?error=name');
+        header('Location: holdOprettelseTest.php?error=name');
     }
 
     $sameusercheck = explode("," , $line);
 
     for ($i = 0; $i < count($sameusercheck);$i++) {
+
+        $sql = "SELECT * FROM `login` WHERE `ID` = '".$_POST["id".$i]."'";
+        $result = $conn->query($sql);
+        if($result->num_rows < 1) {
+            header('Location: holdOprettelseTest.php?error=nous');
+        }
+
         for ($j = 0; $j < count($sameusercheck);$j++) {
             if($j != $i) {
                 if ($sameusercheck[$i] == $sameusercheck[$j]) {
-                    header('Location: teamcreate.php?error=dup');
+                    header('Location: holdOprettelseTest.php?error=dup');
                 }
             }
         }

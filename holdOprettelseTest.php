@@ -9,6 +9,9 @@ if(isset($_GET['error'])) {
     if ($_GET['error'] == "dub") {
         $line .= "The same player cant hold multiple spots on a team";
     }
+    if ($_GET['error'] == "nous") {
+        $line .= "You tried to add a user that does not exist";
+    }
 }
 
 
