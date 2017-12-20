@@ -17,6 +17,15 @@ html {
 	color: white;
 }
 
+div a {
+	text-decoration: none;
+	color: white;
+}
+
+div a:hover {
+	color: blue;
+}
+
 h1{
 	color: white;
 }
