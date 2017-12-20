@@ -27,10 +27,12 @@ if(isset($_GET['error'])) {
     Team member id: <br><input type="text" name="id4"> <br>
     Team member id: <br><input type="text" name="id5"> <br>
     Team member id: <br><input type="text" name="id6"> <br>
+
+    <button type="submit" value="Create">Create</button>
+    <button type="submit" value="Cancel">Cancel</button>
 </form>
 
-<button type="submit" value="Create">Create</button>
-<button type="submit" value="Cancel">Cancel</button>
+
 
 <?php
 echo $line;
