@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-
-<html>
-
-<link rel="stylesheet" type="text/css" href="style.css">
-
-<head>
-
-	<title></title>
-
-</head>
-
-<body>
-
+<?php
+include "header.php";
+?>
 	<h1>Profilpage</h1>
 
 	<div class="box">
@@ -27,6 +16,6 @@
 
 </div>
 
-</body>
-
-</html>
+<?php
+include "footer.php";
+?>
