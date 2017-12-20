@@ -1,12 +1,12 @@
 <?php
     $line = "";
-    if(isset($_GET['teamName'])) $teamName = $_GET['teamName'];
-    if(isset($_GET['id1'])) $line .= $_GET['id1'];
-    if(isset($_GET['id2'])) $line .= ",".$_GET['id2'];
-    if(isset($_GET['id3'])) $line .= ",".$_GET['id3'];
-    if(isset($_GET['id4'])) $line .= ",".$_GET['id4'];
-    if(isset($_GET['id5'])) $line .= ",".$_GET['id5'];
-    if(isset($_GET['id6'])) $line .= ",".$_GET['id6'];
+    if(isset($_POST['teamName'])) $teamName = $_POST['teamName'];
+    if(isset($_POST['id1'])) $line .= $_POST['id1'];
+    if(isset($_POST['id2'])) $line .= ",".$_POST['id2'];
+    if(isset($_POST['id3'])) $line .= ",".$_POST['id3'];
+    if(isset($_POST['id4'])) $line .= ",".$_POST['id4'];
+    if(isset($_POST['id5'])) $line .= ",".$_POST['id5'];
+    if(isset($_POST['id6'])) $line .= ",".$_POST['id6'];
 
     $sql = "SELECT * FROM `hold` WHERE `HoldNavn` = '".$teamName."'";
     $result = $conn->query($sql);
