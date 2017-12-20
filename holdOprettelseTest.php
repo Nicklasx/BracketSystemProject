@@ -19,7 +19,7 @@ if(isset($_GET['error'])) {
 <div class="box">
 	<div class="secondBox">
 <h2>Create team:</h2>
-<form action="register.php" method="POST">
+<form action="teamregister.php" method="POST">
     Team name: <br><input type="text" name="teamName" required> <br><br>
     Team member id: <br><input type="text" name="id1" required> <br>
     Team member id: <br><input type="text" name="id2"> <br>
