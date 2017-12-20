@@ -16,9 +16,10 @@ include "sqlconn.php";
   <li><a href="index.php">Home</a></li>
   <li><a href="tournaments.php">Tournaments</a></li>
   <li><a href="holdOprettelseTest.php">Create Team</a></li>
-  <li><a href="#about">My matches</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="">Matches</a></li>
+  <li><a href="">About</a></li>
   <li><a href="Profilpage_php.php">Profile</a></li>
+  <li><a href="">My Team</a></li>
 
 <form action='login.php' method='POST'>
 <input type='text' name='username' required>
