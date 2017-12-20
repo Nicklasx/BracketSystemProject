@@ -1,4 +1,6 @@
-<link rel="stylesheet" type="text/css" href="media/style.css">
+<?php
+include "header.php";
+?>
 
 <h1>Test</h1>
 
@@ -17,3 +19,7 @@
 
 <button type="submit" value="Create">Create</button>
 <button type="submit" value="Cancel">Cancel</button>
+
+<?php
+include "footer.php";
+?>
