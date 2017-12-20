@@ -21,12 +21,12 @@
     $sameusercheck = explode("," , $line);
 
     
-    for ($i = 1; $i < count($sameusercheck); $i++) {
-        $sql = "SELECT * FROM `login` WHERE `ID` = '".$_POST["id".$i]."'";
+    foreach ($sameusercheck as $value) {
+        $sql = "SELECT * FROM `login` WHERE `ID` = '".$value."'";
         $result = $conn->query($sql);
         if($result->num_rows < 1) {
-            header('Location: holdOprettelseTest.php?error='.$_POST['id'.$i]);
-            $error = 1;
+            header('Location: holdOprettelseTest.php?error=nous');
+            exit;
         }
     }
   
