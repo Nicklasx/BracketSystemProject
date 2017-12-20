@@ -75,10 +75,11 @@ float: right;
 }
 
 .tilmeld {
+	float: right;
 	margin: auto;
 	color: white;
 	max-width: 150px;
-	min-width: 100px;
+	min-width: 150px;
 	background-color: gray;
 	border: 2px solid black;
 }
