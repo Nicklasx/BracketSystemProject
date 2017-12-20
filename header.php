@@ -5,8 +5,9 @@ include "sqlconn.php";
 ?>
 
 <html>
-<link rel="stylesheet" type="text/css" href="media/style.css">
+
 <head>
+<link rel="stylesheet" type="text/css" href="media/style.css">
 </head>
 
 <body>
@@ -32,5 +33,4 @@ include "sqlconn.php";
 <form action='logout.php' method='POST'>
 <input type='submit' value='logout'>
 </form>
-</div></div>
 </ul>

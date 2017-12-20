@@ -6,7 +6,7 @@ if(isset($_GET['error'])) {
     if ($_GET['error'] == "name") {
         $line .= "A team with this name already exists";
     }
-    if ($_GET['error'] == "dub") {
+    if ($_GET['error'] == "dup") {
         $line .= "The same player cant hold multiple spots on a team";
     }
     if ($_GET['error'] == "nous") {

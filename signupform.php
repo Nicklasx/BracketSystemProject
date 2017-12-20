@@ -44,11 +44,12 @@ if(isset($_GET['error'])) {
         <form action="index.php" method="POST">
             <input type="submit" value="Cancel">
         </form>
+        <?php echo $line; ?>
     </div>
 </div>
 
 
 <?php
-echo $line;
+
 include "footer.php";
 ?>
