@@ -13,8 +13,8 @@ include "sqlconn.php";
 
 <ul class="topnav">
   <li><a href="index.php">Home</a></li>
-  <li><a href="#news">Turnements</a></li>
-  <li><a href="#contact">Create Team</a></li>
+  <li><a href="tournaments.php">Tournaments</a></li>
+  <li><a href="holdOprettelseTest.php">Create Team</a></li>
   <li><a href="#about">My matches</a></li>
   <li><a href="#about">About</a></li>
   <li><a href="Profilpage_php.php">Profile</a></li>
