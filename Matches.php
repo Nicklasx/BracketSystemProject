@@ -8,19 +8,18 @@ include "header.php";
 
 
 	
-	<div>My Matches</div><br>
+	<div id="My">My Matches</div><br>
 
-<div class="Test"></div>
-	<table>
+	<table class="Test">
   <tr>
-    <th style="color:white;">Team</th>
-    <th style="color:white;">VS</th> 
-    <th style="color:white;">Team</th>
+    <th>Team</th>
+    <th>VS</th> 
+    <th>Team</th>
   </tr>
   <tr>
-    <td style="color:white;">E-sport Vesthimmerland</td>
-    <td style="color:white;">VS</td> 
-    <td style="color:white;">Kolding Hawks</td>
+    <td>E-sport Vesthimmerland</td>
+    <td>VS</td> 
+    <td>Kolding Hawks</td>
   </tr>
   <tr>
     <td></td>
@@ -28,8 +27,8 @@ include "header.php";
     <td></td>
   </tr>
 </table>
-	
-	
+</div>
+		
 </div>
 
 <?php

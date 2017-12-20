@@ -84,9 +84,15 @@ float: right;
 	border: 2px solid black;
 }
 
+#My {
+	width: 200px;
+	margin: auto;
+	color: white;
+}
+
 .test {
-	border: 2px solid black; 
-	width: 300%; 
-	background-color: black; 
-	margin-left: -375px;
+	color: white;
+	border-width: 200px;
+	border: 2px solid black;
+	border-left: 200px;
 }
