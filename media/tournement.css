@@ -10,7 +10,7 @@
 .b1,.b2,.b3,.b4 {
 	display: block;
 	left: 135px;
-	top: 325px;
+	top: 250px;
 }
 
 .b5,.b6 {
@@ -25,25 +25,25 @@
 }
 
 .b2 {
-	top: 400px;
+	top: 325px;
 }
 
 .b3 {
-	top: 475px;
+	top: 400px;
 }
 
 .b4 {
-	top: 550px;
-}
-
-.b5 {
-	top: 400;
-}
-
-.b6 {
 	top: 475px;
 }
 
+.b5 {
+	top: 325;
+}
+
+.b6 {
+	top: 400px;
+}
+
 .b7 {
-	top: 437.5px;
+	top: 362.5px;
 }
