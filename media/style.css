@@ -9,6 +9,7 @@ html {
 	min-height: 765px;
 	margin: auto;
 	background-image: url(loginTestpng.png);
+
 }
 
 .secondBox {
@@ -82,19 +83,6 @@ float: right;
 	min-width: 150px;
 	background-color: gray;
 	border: 2px solid black;
-}
-
-#My {
-	width: 200px;
-	margin: auto;
-	color: white;
-}
-
-.test {
-	color: white;
-	border-width: 200px;
-	border: 2px solid black;
-	border-left: 200px;
 }
 
 .b1,.b2,.b3,.b4,.b5,.b6,.b7 {

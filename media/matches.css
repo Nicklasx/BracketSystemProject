@@ -1,0 +1,27 @@
+#My {
+	width: 200px;
+	margin: auto;
+	color: white;
+}
+
+#My2 {
+	width: 200px;
+	margin: auto;
+	color: white;
+}
+
+.test {
+	color: white;
+	border-width: 200px;
+	border: 2px solid black;
+	position: absolute;
+	left: 600px;
+}
+
+.test2 {
+	color: white;
+	border-width: 200px;
+	border: 2px solid black;
+	position: absolute;
+	left: 600px;
+}
