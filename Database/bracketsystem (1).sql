@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 19. 12 2017 kl. 09:40:45
+-- Genereringstid: 21. 12 2017 kl. 10:01:58
 -- Serverversion: 10.1.28-MariaDB
 -- PHP-version: 7.1.11
 
@@ -31,24 +31,20 @@ SET time_zone = "+00:00";
 CREATE TABLE `hold` (
   `ID` int(11) NOT NULL,
   `HoldNavn` varchar(255) NOT NULL,
-  `MedlemID` int(11) NOT NULL,
+  `MedlemID` varchar(255) NOT NULL,
   `Created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
--- Struktur-dump for tabellen `kommendekampe`
+-- Data dump for tabellen `hold`
 --
 
-CREATE TABLE `kommendekampe` (
-  `ID` int(11) NOT NULL,
-  `Tidspunkt` datetime NOT NULL,
-  `HoldID` int(11) NOT NULL,
-  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+INSERT INTO `hold` (`ID`, `HoldNavn`, `MedlemID`, `Created`, `modified`) VALUES
+(3, 'nej', '3', '2017-12-20 11:22:42', '2017-12-20 11:22:42'),
+(4, 'enj', '3,19', '2017-12-20 11:23:12', '2017-12-20 11:23:12'),
+(6, 'ej', '3', '2017-12-20 11:33:08', '2017-12-20 11:33:08'),
+(7, 'ko', '3', '2017-12-21 08:33:42', '2017-12-21 08:33:42');
 
 -- --------------------------------------------------------
 
@@ -65,10 +61,18 @@ CREATE TABLE `login` (
   `Fornavn` varchar(255) NOT NULL,
   `Efternavn` varchar(255) NOT NULL,
   `GamerTag` varchar(255) NOT NULL,
-  `Holdleder` varchar(10) NOT NULL,
+  `Holdleder` varchar(10) DEFAULT NULL,
   `Created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Data dump for tabellen `login`
+--
+
+INSERT INTO `login` (`ID`, `Username`, `Password`, `E-mail`, `Mobil nummer`, `Fornavn`, `Efternavn`, `GamerTag`, `Holdleder`, `Created`, `modified`) VALUES
+(3, 'ni', 'ni', 'ni', 13, 'ni', 'ni', 'ni', '', '2017-12-19 11:52:02', '2017-12-19 11:52:02'),
+(19, 'in', 'ni', 'in', 0, 'ni', 'ni', 'in', '', '2017-12-20 11:09:19', '2017-12-20 11:09:19');
 
 -- --------------------------------------------------------
 
@@ -96,13 +100,6 @@ ALTER TABLE `hold`
   ADD KEY `MedlemID` (`MedlemID`);
 
 --
--- Indeks for tabel `kommendekampe`
---
-ALTER TABLE `kommendekampe`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `HoldSpil` (`HoldID`);
-
---
 -- Indeks for tabel `login`
 --
 ALTER TABLE `login`
@@ -123,47 +120,19 @@ ALTER TABLE `placering`
 -- Tilføj AUTO_INCREMENT i tabel `hold`
 --
 ALTER TABLE `hold`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- Tilføj AUTO_INCREMENT i tabel `kommendekampe`
---
-ALTER TABLE `kommendekampe`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Tilføj AUTO_INCREMENT i tabel `login`
 --
 ALTER TABLE `login`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Tilføj AUTO_INCREMENT i tabel `placering`
 --
 ALTER TABLE `placering`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- Begrænsninger for dumpede tabeller
---
-
---
--- Begrænsninger for tabel `hold`
---
-ALTER TABLE `hold`
-  ADD CONSTRAINT `Medlemmer` FOREIGN KEY (`MedlemID`) REFERENCES `login` (`ID`);
-
---
--- Begrænsninger for tabel `kommendekampe`
---
-ALTER TABLE `kommendekampe`
-  ADD CONSTRAINT `HoldSpil` FOREIGN KEY (`HoldID`) REFERENCES `hold` (`ID`);
-
---
--- Begrænsninger for tabel `placering`
---
-ALTER TABLE `placering`
-  ADD CONSTRAINT `HoldPlacering` FOREIGN KEY (`HoldID`) REFERENCES `hold` (`ID`);
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
