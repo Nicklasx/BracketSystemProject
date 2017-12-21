@@ -8,10 +8,9 @@
 }
 
 .b1,.b2,.b3,.b4 {
-	background: #2db34a;
-  float: left;
-  margin: 1.858736059%;
-  width: 29.615861214%;
+	display: block;
+	left: 135px;
+	top: 250px;
 }
 
 .b5,.b6 {
@@ -26,34 +25,25 @@
 }
 
 .b2 {
-	background: #2db34a;
-  float: left;
-  margin-top: 6.858736059%;
-  width: 50.615861214%;
+	top: 325px;
 }
 
 .b3 {
-	background: #2db34a;
-  float: left;
-  margin-top: 11.858736059%;
-  width: 50.615861214%;
+	top: 400px;
 }
 
 .b4 {
-	background: #2db34a;
-  float: left;
-  margin-top: 16.858736059%;
-  width: 50.615861214%;
-}
-
-.b5 {
-	top: 400;
-}
-
-.b6 {
 	top: 475px;
 }
 
+.b5 {
+	top: 325;
+}
+
+.b6 {
+	top: 400px;
+}
+
 .b7 {
-	top: 437.5px;
+	top: 362.5px;
 }
