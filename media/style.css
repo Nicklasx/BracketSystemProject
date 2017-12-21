@@ -1,3 +1,6 @@
+@import url("tournement.css");
+@import url("dropdownTil.css");
+
 html {
 	background-image: url(loginTest1png.png);
 }
@@ -95,29 +98,4 @@ float: right;
 	border-width: 200px;
 	border: 2px solid black;
 	border-left: 200px;
-}
-
-.b1,.b2,.b3,.b4,.b5,.b6,.b7 {
-	color: white;
-	border: 2px solid black;
-	max-width: 300px;
-	min-width: 300px;
-	min-height: 70px;
-}
-
-.b1,.b2,.b3,.b4 {
-	display: block;
-}
-
-.b5,.b6 {
-	margin: auto;
-}
-
-.b7 {
-	float: right;
-	min-width: 300px;
-}
-
-.b1 {
-
 }
