@@ -67,7 +67,7 @@ if (empty($line2)) {
     $line2 = $_POST['nytnavn'];
 }
 else {
-    $line2 = ",".$_POST['nytnavn'];
+    $line2 .= ",".$_POST['nytnavn'];
 }
 
 $sql = "UPDATE `tournering` SET `match".$decide."`='".$line2."' WHERE ID = '".$id."'";
@@ -78,7 +78,7 @@ if ($conn->query($sql) === TRUE ) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-
+header('Location: index.php');
 ?>
 
 
