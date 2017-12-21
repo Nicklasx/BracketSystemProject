@@ -2,13 +2,12 @@
 include "header.php";
 $line = "";
 
-echo $_SESSION['id'];
 
 if (isset($_SESSION['id'])) {
 	$sql = "SELECT * FROM `hold`";
 	$result = $conn->query($sql);
 	while($row = $result->fetch_assoc()) {
-		echo "yay";
+
 		$checkForUser = explode("," , $row['MedlemID']);
 		foreach ($checkForUser as $value) {
 			if($value == $_SESSION['id']) {
