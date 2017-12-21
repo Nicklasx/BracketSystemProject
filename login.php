@@ -12,6 +12,7 @@ if($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         if($password == $row['Password']) {
             $_SESSION['username'] = $username;
+            $_SESSIOM['id'] = $row['ID'];
             $error = 1;
             break;
         }

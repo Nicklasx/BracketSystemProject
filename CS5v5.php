@@ -1,5 +1,17 @@
 <?php
 include "header.php";
+$line = "";
+
+$sql = "SELECT * FROM `hold` WHERE `MedlemID` LIKE '%".$_SESSION['id']."%'";
+$result = $conn->query($sql);
+while($row = $result->fetch_assoc()) {
+	$checkForUser = explode("," , $row['MedlemID']);
+	foreach ($checkForUser as $value) {
+		if($value == $_SESSION['id']) {
+
+		}
+	}
+}
 ?>
 
 <h1>CS5v5</h1>
