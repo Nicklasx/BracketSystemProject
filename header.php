@@ -21,7 +21,7 @@ error_reporting(E_ALL);
   <li><a href="Matches.php">Matches</a></li>
   <li><a href="">About</a></li>
   <li><a href="Profilpage_php.php">Profile</a></li>
-  <li><a href="">My Team</a></li>
+  <li><a href="myteam.php">My Team</a></li>
 
 <form action='login.php' method='POST'>
 <input type='text' name='username' required>
