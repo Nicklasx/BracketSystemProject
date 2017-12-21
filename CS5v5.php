@@ -16,6 +16,8 @@ if (isset($_SESSION['id'])) {
 		}
 	}
 }
+
+$id = $_GET['id'];
 ?>
 
 <h1>CS5v5</h1>
@@ -24,12 +26,13 @@ if (isset($_SESSION['id'])) {
 
 		<div class="tilmeld">
 			<h4>Join turnament</h4>
-			
-<select name="teamChoose">                
+			<form action="teaminsert.php?id=<?php echo $id;?>" method="POST">
+				<select name="nytnavn">                
                 <?php echo $line; ?>
-            </select>
+            	</select>
 
 			<input type="submit" value="Join with team">
+			</form>
 		</div>
 
 		<div class="b1">Quarterfinal<br>

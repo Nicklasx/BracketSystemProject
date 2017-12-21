@@ -1,7 +1,11 @@
 <?php
 include "header.php";
 $line = "";
-$sql = "SELECT * FROM tournering"
+$sql = "SELECT * FROM tournering";
+$result = $conn->query($sql);
+while($row = $result->fetch_assoc()) {
+	$line .= "<div><a href='CS5v5.php?id=".$row['ID']."'>".$row['turneringnavn']."</a></div><br>";
+}
 ?>
 
 <h1>Tournaments</h1>
@@ -9,7 +13,7 @@ $sql = "SELECT * FROM tournering"
 <div class="box">
 <div class="secondbox">
 
-	<div><a href="CS5v5.php">Couter Strike Globale Offensive 5v5</a></div><br>
+	<?php echo $line; ?>
 
 
 </div>
