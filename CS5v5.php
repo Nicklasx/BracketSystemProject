@@ -2,13 +2,18 @@
 include "header.php";
 $line = "";
 
-$sql = "SELECT * FROM `hold` WHERE `MedlemID` LIKE '%".$_SESSION['id']."%'";
-$result = $conn->query($sql);
-while($row = $result->fetch_assoc()) {
-	$checkForUser = explode("," , $row['MedlemID']);
-	foreach ($checkForUser as $value) {
-		if($value == $_SESSION['id']) {
+echo $_SESSION['id'];
 
+if (isset($_SESSION['id'])) {
+	$sql = "SELECT * FROM `hold`";
+	$result = $conn->query($sql);
+	while($row = $result->fetch_assoc()) {
+		echo "yay";
+		$checkForUser = explode("," , $row['MedlemID']);
+		foreach ($checkForUser as $value) {
+			if($value == $_SESSION['id']) {
+				$line.="<option value='".$row['HoldNavn']."'>".$row['HoldNavn']."</option>";
+			}
 		}
 	}
 }
@@ -21,10 +26,8 @@ while($row = $result->fetch_assoc()) {
 		<div class="tilmeld">
 			<h4>Join turnament</h4>
 			
-<select name="teamcaptain">
-                <option value=""></option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
+<select name="teamChoose">                
+                <?php echo $line; ?>
             </select>
 
 			<input type="submit" value="Join with team">
