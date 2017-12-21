@@ -1,3 +1,6 @@
+@import url("tournement.css");
+@import url("dropdownTil.css");
+
 html {
 	background-image: url(loginTest1png.png);
 }
@@ -85,6 +88,7 @@ float: right;
 	border: 2px solid black;
 }
 
+<<<<<<< HEAD
 .b1,.b2,.b3,.b4,.b5,.b6,.b7 {
 	color: white;
 	border: 2px solid black;
@@ -108,4 +112,17 @@ float: right;
 
 .b1 {
 
+=======
+#My {
+	width: 200px;
+	margin: auto;
+	color: white;
+}
+
+.test {
+	color: white;
+	border-width: 200px;
+	border: 2px solid black;
+	border-left: 200px;
+>>>>>>> 2b9042a35fdfc3e3116d261bd50379b5a248c90f
 }
