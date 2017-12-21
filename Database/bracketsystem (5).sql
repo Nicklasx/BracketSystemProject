@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 21. 12 2017 kl. 10:15:47
+-- Genereringstid: 21. 12 2017 kl. 10:19:02
 -- Serverversion: 10.1.28-MariaDB
 -- PHP-version: 7.1.11
 
@@ -88,6 +88,34 @@ CREATE TABLE `placering` (
   `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `tournering`
+--
+
+CREATE TABLE `tournering` (
+  `ID` int(11) NOT NULL,
+  `HoldID` int(11) NOT NULL,
+  `turneringnavn` varchar(255) NOT NULL,
+  `match1` varchar(255) NOT NULL,
+  `match2` varchar(255) NOT NULL,
+  `match3` varchar(255) NOT NULL,
+  `match4` varchar(255) NOT NULL,
+  `match5` varchar(255) NOT NULL,
+  `match6` varchar(255) NOT NULL,
+  `match7` varchar(255) NOT NULL,
+  `winner1` varchar(255) NOT NULL,
+  `winner2` varchar(255) NOT NULL,
+  `winner3` varchar(255) NOT NULL,
+  `winner4` varchar(255) NOT NULL,
+  `winner5` varchar(255) NOT NULL,
+  `winer6` varchar(255) NOT NULL,
+  `winner7` varchar(255) NOT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Begrænsninger for dumpede tabeller
 --
@@ -113,6 +141,12 @@ ALTER TABLE `placering`
   ADD KEY `HoldPlacering` (`HoldID`);
 
 --
+-- Indeks for tabel `tournering`
+--
+ALTER TABLE `tournering`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Brug ikke AUTO_INCREMENT for slettede tabeller
 --
 
@@ -132,6 +166,12 @@ ALTER TABLE `login`
 -- Tilføj AUTO_INCREMENT i tabel `placering`
 --
 ALTER TABLE `placering`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Tilføj AUTO_INCREMENT i tabel `tournering`
+--
+ALTER TABLE `tournering`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
