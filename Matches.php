@@ -23,10 +23,15 @@ include "header.php";
   </tr>
   <tr>
     <td></td>
-    <td></td> 
+    <td>VS</td> 
     <td></td>
   </tr>
-</table><br><br><br><br>
+  <tr>
+    <td></td>
+    <td>VS</td>
+    <td></td>
+  </tr>
+</table><br><br><br><br><br><br><br>
 
 <div id="My2">Matches Of The Week</div><br>
 
@@ -43,7 +48,32 @@ include "header.php";
   </tr>
   <tr>
     <td></td>
-    <td></td> 
+    <td>VS</td> 
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VS</td>
+    <td></td>
+  </tr>
+<tr>
+    <td></td>
+    <td>VS</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VS</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VS</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>VS</td>
     <td></td>
   </tr>
 </table>

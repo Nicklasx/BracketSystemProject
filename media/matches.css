@@ -1,12 +1,14 @@
 #My {
 	width: 200px;
 	margin: auto;
+	font-size: 20px;
 	color: white;
 }
 
 #My2 {
 	width: 200px;
 	margin: auto;
+	font-size: 20px;
 	color: white;
 }
 
@@ -15,7 +17,7 @@
 	border-width: 200px;
 	border: 2px solid black;
 	position: absolute;
-	left: 600px;
+	left: 500px;
 }
 
 .test2 {
@@ -23,5 +25,5 @@
 	border-width: 200px;
 	border: 2px solid black;
 	position: absolute;
-	left: 600px;
+	left: 500px;
 }
